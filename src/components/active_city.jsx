@@ -8,12 +8,14 @@ const ActiveCity = (props) => {
       <div className="active-city">
         <h3>{props.selectedCity.name}</h3>
         <p>{props.selectedCity.address}</p>
-        <img className="" src={`https://kitt.lewagon.com/placeholder/cities/${props.selectedCity.slug}`} />
+        <img src={`https://kitt.lewagon.com/placeholder/cities/${props.selectedCity.slug}`} />
       </div>
     )
   } else {
     return (
-      <div>no city</div>
+      <div className="active-city">
+        <h3>No city selected yet </h3>
+      </div>
     )
   }
 }
